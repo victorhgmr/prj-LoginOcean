@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to right top, #2e6dcd, #2a68c6, #2663c0, #225eb9, #1e59b3);
+    padding: 40px;
+}
+
+.container{
+    min-height: calc(100vh - 40px *2);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.login-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    background-color: #CEE7FF;
+
+}
+
+.login-right{
+    background-color: #CEE7FF;
+    display: flex;
+    justify-content: center;
+}
+
+.login-right img {
+    width: 100%;
+}
+
+.login-header{
+    width: 450px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+
+}
+
+.login-header h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.login-header p{
+    opacity: 0.7;
+}
+
+.login-form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-right: 20px;
+    
+}
+
+
+.login-form-footer{
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.login-form-footer a{
+    flex: 6;
+    gap: 15px;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 0.7rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.login-form-footer a:hover{
+    background-color: #808CC0;
+}
+
+input[type='password'] , input[type='text'] {
+    border: 2px solid black;
+    height: 55px;
+    padding: 0 2rem;
+    width: 100%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px;
+}
+
+.checkbox {
+    display:  flex;
+    align-items: center;
+    gap: 7px;
+}
+
+input[typer='checkbox']{
+    width: 20px;
+    height: 20px;
+
+}
+
+button{
+    border: none;
+    background-image: linear-gradient(to right top, #2e6dcd, #2a68c6, #2663c0, #225eb9, #1e59b3);
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 55px;
+    cursor: pointer;
+}
+
+@media (max-width:1350px) {
+    .login-left{
+        padding: 50px;
+    }
+    .login-form{
+        width: 100%;
+    }
+
+    .login-form-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .login-header {
+        font-size: 1.7vw;
+    }
+    .login-header h1{
+        font-size: 2.8vw;
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        padding: 20px;
+    }
+    
+    .container {
+        grid-template-columns: auto;
+
+    }
+    .login-right{
+        display: none;
+    }
+    .login-header {
+        font-size: 2.5vw;
+    }
+    .login-header h1{
+        font-size: 5vw;
+    }
+}
+
+@media (max-width:570px) {
+    body {
+        padding: 20px;
+    }
+    
+    .container {
+        grid-template-columns: auto;
+
+    }
+    .login-right{
+        display: none;
+    }
+    .login-header {
+        font-size: 20px;
+    }
+    .login-header h1{
+        font-size: 35px;
+    }
+}
